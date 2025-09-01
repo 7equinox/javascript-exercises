@@ -18,8 +18,9 @@ const power = function(intBase, intPower) {
   return intBase ** intPower;
 };
 
-const factorial = function() {
-	
+const factorial = function(intNum) {
+  if(intNum === 0 || intNum === 1) return 1;
+	return intNum * factorial(intNum - 1);
 };
 
 // Do not edit below this line
